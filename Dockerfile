@@ -1,4 +1,3 @@
-
 FROM python:3.9.1-buster
 
 ENV VIRTUAL_ENV "/venv"
@@ -9,7 +8,6 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y ffmpeg opus-tools bpm-tools
 RUN python -m pip install --upgrade pip
 RUN python -m pip install wheel
-#RUN python -m pip install pytgcalls[pyrogram] TgCrypto ffmpeg-python psutil
 
 WORKDIR /app
 
@@ -18,6 +16,3 @@ COPY . .
 RUN pip install -U -r requirements.txt
 
 CMD python3 main.py
-
-# docker build -t tgcalls .
-# docker run -it --rm --env-file ./envfile --name tgvc-userbot tgcalls
