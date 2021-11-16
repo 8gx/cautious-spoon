@@ -1,0 +1,24 @@
+{
+	"name": "worker Bot",
+	"stack": "container",
+	"env": {
+		"env": {
+    "API_ID": {
+            "description": "api_id",
+            "required": true
+    },
+    "API_HASH": {
+            "description": "api_hash",
+            "required": true
+    },
+    "SESSION_NAME": {
+            "description": "Pyrogram",
+            "required": true
+    },
+    "PLUGIN": {
+            "description": "xd",
+            "value": "player",
+            "required": true
+    }
+  },
+}
