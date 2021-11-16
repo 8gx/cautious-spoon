@@ -15,4 +15,4 @@ COPY . .
 
 RUN pip install -U -r requirements.txt
 
-CMD python3 main.py
+CMD ./start.sh
